@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0a0000;
+    height:100vh;
+    overflow:hidden;
+    font-family:Inter,sans-serif;
+}
+
+.page{
+
+    width:92%;
+    height:92vh;
+
+    margin:auto;
+    margin-top:2vh;
+
+    background:white;
+
+    position:relative;
+    overflow:hidden;
+
+    border-radius:4% 4% 3% 3%;
+
+    transform:
+    perspective(1200px)
+    rotateX(1deg);
+
+}
+
+/* background flowers */
+
+.page::before{
+
+    content:"";
+
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-50px;
+
+    height:45%;
+
+    background:url(
+    "https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=1600"
+    );
+
+    background-size:cover;
+    background-position:center;
+
+    opacity:.18;
+
+    filter:
+    blur(4px)
+    saturate(140%);
+}
+
+/* header */
+
+header{
+
+    position:absolute;
+    top:55px;
+    left:60px;
+    right:60px;
+
+    display:flex;
+    justify-content:space-between;
+
+    z-index:5;
+}
+
+header p{
+    font-size:16px;
+}
+
+header h4{
+    font-size:20px;
+    margin-top:4px;
+}
+
+.center{
+    text-align:center;
+}
+
+.right{
+    text-align:right;
+}
+
+/* hero */
+
+main{
+
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.welcome{
+
+    position:absolute;
+
+    top:35%;
+
+    left:130px;
+
+    color:#d90000;
+
+    font-family:"Bodoni Moda";
+
+    font-size:70px;
+
+    z-index:5;
+}
+
+h1{
+
+    font-family:"Bodoni Moda";
+
+    color:#d90000;
+
+    font-size:18vw;
+
+    font-weight:600;
+
+    letter-spacing:-12px;
+
+    z-index:4;
+}
+
+/* curve */
+
+.line{
+
+    position:absolute;
+
+    width:1200px;
+
+    height:700px;
+
+    z-index:5;
+
+    pointer-events:none;
+}
+
+/* badge */
+
+.badge{
+
+    position:absolute;
+
+    right:140px;
+
+    top:260px;
+
+    border:4px solid #d90000;
+
+    color:#d90000;
+
+    font-weight:600;
+
+    padding:16px 26px;
+
+    border-radius:20px;
+
+    transform:rotate(-14deg);
+
+    font-size:24px;
+
+    text-align:center;
+
+    z-index:6;
+}
+
+/* footer */
+
+footer{
+
+    position:absolute;
+
+    left:60px;
+    right:60px;
+    bottom:50px;
+
+    display:flex;
+    justify-content:space-between;
+
+    z-index:6;
+
+    font-size:20px;
+}
+
+footer div:nth-child(2){
+    text-align:center;
+}
